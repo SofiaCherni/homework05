@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Search</title>
+    <link rel="stylesheet" href="../css/reset.css">
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+    <div class="wrapper">
+        <header class="header">
+            <div class="logo-wrap"><a href="../index.html"><img src="../images/logo.png" alt="logotype"></a></div>
+            <div class="menu-wrap">
+                <h1 class="menu-wrap__heading">Пошук автомобіля</h1>
+                <ul class="menu">
+                    <li class="menu__item"><a href="sign_up.html" class="menu__link">Реєстрація</a></li>
+                    <li class="menu__item"><a href="sign_in.html" class="menu__link">Авторизація</a></li>
+                    <li class="menu__item"><a href="search.html" class="menu__link">Пошук</a></li>
+                </ul>
+            </div>
+        </header>
+        <main class="main-search">
+            <section class="filter">
+                <h2 class="filter__heading">Пошук автомобіля</h2>
+                <form method="POST" action="https://fom.in.ua/echo">
+                    <div class="filterform">
+                        <div class="filterform__row">
+                            <div class="filterform__item">
+                                <select name="car_body">
+                                    <option value=" ">Оберіть тип кузова</option>
+                                    <option value="sedan">Седан</option>
+                                    <option value="hatchback">Хечбек</option>
+                                    <option value="crossover">Кросовер</option>
+                                    <option value="universal">Універсал</option>
+                                </select>
+                            </div>
+                            <div class="filterform__item">
+                                <select name="brand">
+                                    <option value=" ">Оберіть марку</option>
+                                    <option value="audy">Audy</option>
+                                    <option value="bmw">BMW</option>
+                                    <option value="chevrole">Cevrolet</option>
+                                    <option value="ford">Ford</option>
+                                    <option value="honda">Honda</option>
+                                    <option value="hynday">Hyndai</option>
+                                    <option value="kia">Kia</option>
+                                    <option value="lexus">Lexus</option>
+                                    <option value="mazda">Mazda</option>
+                                    <option value="mers">Mersedes</option>
+                                </select>
+                            </div>
+                            <div class="filterform__item">
+                                <select name="country">
+                                    <option value=" ">Оберіть країну</option>
+                                    <option value="DEU">Німеччина</option>
+                                    <option value="JPN">Японія</option>
+                                    <option value="FRA">Франція</option>
+                                    <option value="USA">США</option>
+                                    <option value="KOR">Корея</option>
+                                    <option value="CZE">Чехія</option>
+                                    <option value="UKR">Україна</option>
+                                    <option value="CHN">Китай</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="filterform__row">
+                            <div class="filterform__item--spesial">
+                                <div class="price">
+                                    <input type="text" name="price from" placeholder="Ціна від"> 
+                                    <input type="text" name="price before" placeholder="до">
+                                </div>
+                                <div class="currency">
+                                    <select name="currency">
+                                        <option value="USD">$</option>
+                                        <option value="EUR">€</option>
+                                        <option value="UAH">₴</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="filterform__item--spesial">
+                                <div class="filterform__item--fuel">
+                                    <select name="fuel">
+                                        <option value=" ">Топливо</option>
+                                        <option value="petrol">Бензин</option>
+                                        <option value="disel">Дизель</option>
+                                        <option value="gas">Газ</option>
+                                        <option value="electric">Електро</option>
+                                    </select>
+                                </div>
+                                <div class="filterform__item--transmission">
+                                    <select name="transmission">
+                                        <option value=" ">Коробка</option>
+                                        <option value="automatic">Автомат</option>
+                                        <option value="robot">Робот</option>
+                                        <option value="variable">Вариатор</option>
+                                        <option value="mechanics">Механика</option>
+                                    </select>
+                                </div> 
+                            </div>
+                            <div class="filterform__item--spesial">
+                                <div class="year">
+                                    <select name="year_from">
+                                        <option value=" ">Рік від</option>
+                                        <option value="2024">2024</option>
+                                        <option value="2023">2023</option>
+                                        <option value="2022">2022</option>
+                                        <option value="2021">2021</option>
+                                        <option value="2020">2020</option>
+                                        <option value="2019">2019</option>
+                                        <option value="2018">2018</option>
+                                        <option value="2017">2017</option>
+                                    </select>
+                                </div>
+                                <div class="year">
+                                    <select name="year_before">
+                                        <option value=" ">до</option>
+                                        <option value="2024">2024</option>
+                                        <option value="2023">2023</option>
+                                        <option value="2022">2022</option>
+                                        <option value="2021">2021</option>
+                                        <option value="2020">2020</option>
+                                        <option value="2019">2019</option>
+                                        <option value="2018">2018</option>
+                                        <option value="2017">2017</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="filterform__row">
+                            <div class="filterform__item">
+                                <select name="state" multiple size="2">
+                                    <option value="Undamaged">Непошкоджена</option>
+                                    <option value="beat">Бита</option>
+                                    <option value="on_credit">У кредит</option>
+                                    <option value="details">На запчпстини</option>
+                                    <option value="not_customs">Нерозмитнена</option>
+                                </select>
+                            </div>
+                            <div class="filterform__item--comfort">
+                                <label> 
+                                    <input type="checkbox" name="Люк" />
+                                    Люк
+                                </label>
+                                <label>
+                                    <input type="checkbox" name="Шкіряний салон" /> 
+                                    Шкіряний салон
+                                </label>
+                                <label>
+                                    <input type="checkbox" name="Підігрів сидінь" />
+                                    Підігрів сидінь
+                                </label>
+                                <label>
+                                    <input type="checkbox" name="Кондиціонер" />
+                                    Кондиціонер
+                                </label>
+                                <label>
+                                    <input type="checkbox" name="Електросклопідйомники" />
+                                    Електросклопідйомники
+                                </label>
+                            </div>
+                            <div class="filterform__item--spesial">
+                                <div class="filterform-color">
+                                    <select name="color">
+                                        <option value=" ">Оберіть колір</option>
+                                        <option value="red">Червоний</option>
+                                        <option value="black">Чорний</option>
+                                        <option value="whith">Білий</option>
+                                        <option value="blue">Синій</option>
+                                        <option value="yellow">Жовтий</option>
+                                        <option value="green">Зелений</option>
+                                        <option value="grey">Сірий</option>
+                                    </select>
+                                </div>
+                                <div class="filterform-metal">
+                                    <label>
+                                        <input type="checkbox" name="metalic" />
+                                        Металік
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="filterform__row">
+                            <p>
+                                <input type="reset" class="find-reset" name="reset" value="Скаcувати">
+                            </p>
+                            <p>
+                                <input type="submit" class="find-submit" name="submit" value="Знайти">
+                            </p>
+                        </div>
+                    </div>
+                </form>
+        </section>
+    </main>
+</div>
+</body>
+</html>
