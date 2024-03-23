@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up</title>
+    <link rel="stylesheet" href="../css/reset.css">
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+    <div class="wrapper">
+        <header class="header">
+            <div class="logo-wrap"><a href="../index.html"><img src="../images/logo.png" alt="logotype"></a></div>
+            <div class="menu-wrap">
+                <h1 class="menu-wrap__heading">Створити обліковий запис</h1>
+                <ul class="menu">
+                    <li class="menu__item"><a href="sign_up.html" class="menu__link">Реєстрація</a></li>
+                    <li class="menu__item"><a href="sign_in.html" class="menu__link">Авторизація</a></li>
+                    <li class="menu__item"><a href="search.html" class="menu__link">Пошук</a></li>
+                </ul>
+            </div>
+        </header>
+        <main class="main">
+            <section class="form">
+                <h2 class="form__heading">Створити новий обліковий запис</h2>
+                <form method="POST" action="https://fom.in.ua/echo">
+                    <p>
+                        <input type="email" class="form-control" name="email" placeholder="Email" required="required" />
+                    </p>
+                    <p>
+                        <input type="password" class="form-control" name="password" placeholder="Password" pattern="[0-9a-zA-Z]{8}" title="Должен содержать по меньшей мере одну цифру, одну большую и одну маленькую буквы латинского алфавита и быть в длину не менее 8 символов" required="required" />
+                    </p>
+                    <p>
+                        <input type="password" class="form-control" name="password-confi" placeholder="Confirm Password" required="required" />
+                    </p>
+                    <p>
+                        <input type="submit" class="form-submit" name="submit" value="Отправить" />
+                    </p>
+                </form>
+            </section>
+        </main>
+    </div>
+</body>
+</html>
