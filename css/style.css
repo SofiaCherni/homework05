@@ -34,7 +34,7 @@ select {
 .wrapper--home {
     background: rgb(255, 255, 255);
 }
-
+/* -----------------header ----------------------------*/
 /* 10 */
 .header {
     display: flex;
@@ -118,7 +118,86 @@ select {
     color: #1445a1;
     text-decoration: underline;
 }
+/* ---------------------------------------------------------*/
 
+/* -----------------main home ----------------------------*/
+/* 10 */
+.main--home {
+    margin: 0 auto;
+    padding: 0 10%;
+}
+
+/* 10 */
+.main {
+    width: 28%;
+    margin: 60px auto;
+    background-color: #fff;
+    padding: 40px;
+    border-radius: 6px;
+}
+
+/* 10 */
+.main-search {
+    width: 88%;
+    margin: 20px auto;
+    background-color: #ffffff;
+    padding: 30px 20px;
+    border-radius: 6px;
+}
+
+/* 10 */
+.info__item {
+    margin: 20px 0;
+}
+
+/* 10 */
+.info__heading {
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin-bottom: 15px;
+    color: #1445a1;
+}
+
+/* 10 */
+.info__text {
+    display: flex;
+    text-indent: 40px;
+    text-align: justify;
+    line-height: 1.5rem;
+}
+.info__picture {
+    display: flex;
+    align-items: center;
+}
+/* 11 */
+.info__text img {
+    width: 400px;
+    height: 250px;
+    padding: 5px;
+
+}
+
+/* 10 */
+.products-wrap {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 20px 0;
+}
+
+/* 10 */
+.products-wrap__item {
+    padding: 8px;
+    text-align: center;
+}
+
+/* 11 */
+.products-wrap__item img {
+    width: 185px;
+    height: 120px;
+}
+/* -----------------------------------------------------*/
+/* -----------------footer ----------------------------*/
 /* 10 */
 .footer {
     background: darkgray;
@@ -165,4 +244,155 @@ hr {
 /* 11 */
 .footer__icon a {
     padding: 0 5px;
+}
+/* -----------------------------------------------------*/
+/* -----------------sign_in_up ----------------------------*/
+/* 10 */
+.form__heading,
+.filter__heading {
+    color: #1445a1;
+    text-align: center;
+    font-size: 1.2rem;
+    font-family: "Roboto", sans-serif;
+    font-weight: 600;
+    margin-bottom: 15px;
+}
+
+/* 10 */
+.form-control {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    border: solid 2px #eeeeee;
+    background: rgba(0, 0, 0, .025);
+    border-radius: 6px;
+    color: #333;
+}
+
+/* 10 */
+.form-control-chexbox {
+    font-size: 0.9rem;
+}
+
+/* 11 */
+.form-control-chexbox input {
+    vertical-align: middle;
+    margin-bottom: 4px;
+    margin-left: 5px;
+}
+
+/* 10 */
+.form-submit {
+    width: 100%;
+    padding: 8px;
+    margin-top: 15px;
+    background: #1445a1;
+    border-radius: 6px;
+    color: #ffffff;
+    text-align: center;
+    font-weight: 500;
+}
+/* -------------------------------------------------*/
+/* -----------------search ----------------------------*/
+/* 10 */
+.filterform {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+/* 10 */
+.filterform__row {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+/* 10 */
+.filterform__item {
+    width: 33%;
+}
+
+/* 10 */
+.filterform__item--spesial {
+    display: flex;
+    width: 33%;
+    justify-content: space-between;
+    align-items: baseline
+}
+
+/* 11 */
+.price input {
+    width: 48%;
+    padding: 9px;
+    margin-bottom: 10px;
+    border: solid 2px #eeeeee;
+    border-radius: 6px;
+    color: #000000;
+}
+
+/* 10 */
+.currency {
+    width: 70px;
+}
+
+/* 10 */
+.filterform__item--fuel {
+    width: 49%;
+    margin-right: 5px;
+}
+
+/* 10 */
+.filterform__item--transmission,
+.year {
+    width: 49%;
+}
+
+/* 20 */
+.year:first-child {
+    margin-right: 5px;
+}
+
+/* 10 */
+.filterform__item--comfort {
+    width: 33%;
+    padding: 8px;
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+}
+
+/* 10 */
+.filterform__item--comfort label {
+    margin-left: 5px;
+}
+
+/* 10 */
+.filterform-color {
+    width: 75%;
+    margin-right: 10px;
+}
+
+/* 10 */
+.find-reset {
+    width: 100px;
+    padding: 8px;
+    margin-top: 15px;
+    background: #676c75;
+    border-radius: 6px;
+    color: #ffffff;
+    text-align: center;
+    font-weight: 500;
+}
+
+/* 10 */
+.find-submit {
+    width: 100px;
+    padding: 8px;
+    margin-top: 15px;
+    background: #1445a1;
+    border-radius: 6px;
+    color: #ffffff;
+    text-align: center;
+    font-weight: 500;
 }
