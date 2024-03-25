@@ -396,3 +396,8 @@ hr {
     text-align: center;
     font-weight: 500;
 }
+
+.fa-brands {
+    color: black;
+    font-size: 1.5rem;
+}
