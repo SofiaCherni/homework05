@@ -196,6 +196,13 @@ select {
     width: 185px;
     height: 120px;
 }
+
+.info__text--special {
+    text-decoration: underline;
+    font-size: 2rem;
+    color: green;
+}
+
 /* -----------------------------------------------------*/
 /* -----------------footer ----------------------------*/
 /* 10 */
@@ -317,8 +324,6 @@ hr {
 .filterform__item--spesial {
     display: flex;
     width: 33%;
-    justify-content: space-between;
-    align-items: baseline
 }
 
 /* 11 */
@@ -359,7 +364,8 @@ hr {
     padding: 8px;
     display: flex;
     flex-wrap: wrap;
-    text-align: center;
+    align-items: center;
+    justify-content: center;
 }
 
 /* 10 */
@@ -397,7 +403,13 @@ hr {
     font-weight: 500;
 }
 
+/* 10 */
 .fa-brands {
     color: black;
     font-size: 1.5rem;
+}
+
+/* 10 */
+.filterform-coating {
+    padding-top: 5px;
 }
