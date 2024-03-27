@@ -45,9 +45,9 @@ select {
 /* 10 */
 .logo-wrap {
     display: flex;
-    align-items: center;
-    width: 16%;
-    padding: 10px 1%;
+    align-items: flex-end;
+    width: 18%;
+    padding: 0 1.5%;
 }
 
 /* 11 */
@@ -158,22 +158,34 @@ select {
     color: #1445a1;
 }
 
+.info__heading--spesial {
+    text-align: right;
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin-bottom: 15px;
+    color: #1445a1;
+}
+
 /* 10 */
 .info__text {
     display: flex;
-    text-indent: 40px;
     text-align: justify;
-    line-height: 1.5rem;
+    line-height: 2rem;
 }
-.info__picture {
+
+.info__text--spesial {
     display: flex;
-    align-items: center;
+    justify-content: flex-end;
+    text-align: justify;
+    line-height: 2rem;
+}
+
+.info__picture {
+    width: 35%;
 }
 /* 11 */
-.info__text img {
-    width: 400px;
-    height: 250px;
-    padding: 5px 1%;
+.info__picture img {
+    width: 100%
 
 }
 
@@ -197,10 +209,60 @@ select {
     height: 120px;
 }
 
-.info__text--special {
-    text-decoration: underline;
-    font-size: 2rem;
+/* 10 */
+.info__detail{
+    padding: 20px 2%;
+    text-indent: 40px;
+}
+
+/* 10 */
+.info__car {
+    display: flex;
+}
+
+/* 10 */
+.info__detail--special {
     color: green;
+    font-size: 2rem;
+}
+
+/* 10 */
+.more_details {
+    padding: 10px 4%;
+    margin-top: 15px;
+    background: green;
+    border-radius: 6px;
+    color: #ffffff;
+    text-align: center;
+    font-weight: 500;
+}
+
+/* 10 */
+.products-wrap__btn {
+    padding: 5px 10%;
+    background: green;
+    border-radius: 6px;
+    color: #ffffff;
+    text-align: center;
+    font-weight: 500;
+    text-decoration: none;
+}
+
+/* 10 */
+.description {
+    margin-bottom: 10px;
+}
+
+/* 10 */
+.description--special {
+    color: green;
+    font-size: 1rem;
+}
+
+/* 10 */
+.fa-brands {
+    color: black;
+    font-size: 1.5rem;
 }
 
 /* -----------------------------------------------------*/
@@ -404,12 +466,13 @@ hr {
 }
 
 /* 10 */
-.fa-brands {
-    color: black;
-    font-size: 1.5rem;
+.filterform-coating {
+    padding-top: 5px;
 }
 
 /* 10 */
-.filterform-coating {
-    padding-top: 5px;
+.fa-solid,
+.fa-cloudscale {
+    color: green;
+    font-size: 1.5rem;
 }
